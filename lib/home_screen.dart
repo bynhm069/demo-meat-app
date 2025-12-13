@@ -92,7 +92,7 @@ class HomeScreenState extends State<HomeScreen> {
                     imageUrl: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/CP6HTgEuYE/luk5ntrc_expires_30_days.png",
                     label: "History",
                     color: primaryTextColor,
-                    onTap: () => _navigateToScreen(const ResultScreen()),
+                    onTap: () => _navigateToScreen(const ResultScreen(imagePath: 'Placeholder')), // ResultScreen cần tham số
                   ),
                   _buildNavItem(
                     imageUrl: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/CP6HTgEuYE/rv69c1ho_expires_30_days.png",

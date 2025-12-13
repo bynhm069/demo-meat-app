@@ -1,8 +1,23 @@
 import 'package:flutter/material.dart';
-import 'splash_screen.dart'; // Phải có
-import 'home_screen.dart'; // Phải có
+import 'package:camera/camera.dart'; // Import thư viện camera
+import 'splash_screen.dart';
+import 'home_screen.dart';
 
-void main() {
+// Biến toàn cục để lưu trữ danh sách các camera có sẵn
+List<CameraDescription> cameras = [];
+
+Future<void> main() async {
+  // Đảm bảo rằng Flutter binding đã được khởi tạo
+  WidgetsFlutterBinding.ensureInitialized();
+
+  // Lấy danh sách camera có sẵn trên thiết bị
+  try {
+    cameras = await availableCameras();
+  } on CameraException catch (e) {
+    // Xử lý lỗi nếu không thể lấy được camera (ví dụ: thiếu quyền)
+    print('Error in fetching the cameras: $e');
+  }
+
   runApp(const MyApp());
 }
 
@@ -23,11 +38,9 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      // Đảm bảo Class SplashScreen được sử dụng đúng tên
       home: const SplashScreen(),
 
       routes: {
-        // Đảm bảo Class HomeScreen được sử dụng đúng tên
         '/home': (context) => const HomeScreen(),
       },
     );
