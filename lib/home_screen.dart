@@ -35,8 +35,7 @@ class HomeScreenState extends State<HomeScreen> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Image.network(
-                    "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/CP6HTgEuYE/nvg1re7p_expires_30_days.png",
+                  Image.asset("assets/images/icons/search.png",
                     width: 43,
                     height: 43,
                     fit: BoxFit.fill,
@@ -50,8 +49,8 @@ class HomeScreenState extends State<HomeScreen> {
                   ),
                   GestureDetector(
                     onTap: () => _navigateToScreen(const SettingScreen()),
-                    child: Image.network(
-                      "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/CP6HTgEuYE/ls0ybv1t_expires_30_days.png",
+                    child: Image.asset(
+                      "assets/images/icons/account_circle.png",
                       width: 43,
                       height: 43,
                       fit: BoxFit.fill,
@@ -64,8 +63,8 @@ class HomeScreenState extends State<HomeScreen> {
             // 2. BODY cố định (giữa màn hình)
             Expanded(
               child: Center(
-                child: Image.network(
-                  "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/CP6HTgEuYE/326wxwc3_expires_30_days.png",
+                child: Image.asset(
+                  "assets/images/icons/pig_home.png",
                   width: 232,
                   height: 232,
                   fit: BoxFit.fill,
@@ -83,19 +82,19 @@ class HomeScreenState extends State<HomeScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   _buildNavItem(
-                    imageUrl: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/CP6HTgEuYE/ryndz3d4_expires_30_days.png",
+                    imageUrl: "assets/images/icons/photo_camera.png",
                     label: "Scan",
                     color: primaryTextColor,
                     onTap: () => _navigateToScreen(const ScanScreen()),
                   ),
                   _buildNavItem(
-                    imageUrl: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/CP6HTgEuYE/luk5ntrc_expires_30_days.png",
+                    imageUrl: "assets/images/icons/history.png",
                     label: "History",
                     color: primaryTextColor,
                     onTap: () => _navigateToScreen(const ResultScreen(imagePath: 'Placeholder')), // ResultScreen cần tham số
                   ),
                   _buildNavItem(
-                    imageUrl: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/CP6HTgEuYE/rv69c1ho_expires_30_days.png",
+                    imageUrl: "assets/images/icons/settings.png",
                     label: "Setting",
                     color: primaryTextColor,
                     onTap: () => _navigateToScreen(const SettingScreen()),
@@ -119,7 +118,7 @@ class HomeScreenState extends State<HomeScreen> {
       onTap: onTap,
       child: Column(
         children: [
-          Image.network(
+          Image.asset(
             imageUrl,
             width: 44,
             height: 44,

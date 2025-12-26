@@ -71,8 +71,8 @@ class ProcessingScreenState extends State<ProcessingScreen> {
                               margin: const EdgeInsets.only( bottom: 35),
                               width: 95,
                               height: 95,
-                              child: Image.network(
-                                "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/CP6HTgEuYE/fc1xhs2p_expires_30_days.png",
+                              child: Image.asset(
+                                "assets/images/icons/meet_process.png",
                                 fit: BoxFit.fill,
                               )
                           ),

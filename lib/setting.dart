@@ -51,7 +51,7 @@ class SettingScreen extends StatelessWidget {
           SizedBox(
             width: 26,
             height: 26,
-            child: Image.network(iconUrl, fit: BoxFit.contain),
+            child: Image.asset(iconUrl, fit: BoxFit.contain),
           ),
           const SizedBox(width: 14),
           Expanded(
@@ -109,40 +109,40 @@ class SettingScreen extends StatelessWidget {
                     buildSectionTitle("Tài Khoản"),
                     buildSettingItem(
                       iconUrl:
-                      "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/CP6HTgEuYE/hubniqos_expires_30_days.png",
+                      "assets/images/icons/dangnhap.png",
                       title: "Đăng Nhập",
                     ),
                     buildSectionTitle("Cài Đặt"),
                     buildSettingItem(
                       iconUrl:
-                      "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/CP6HTgEuYE/z4oksa9m_expires_30_days.png",
+                      "assets/images/icons/ngonngu.png",
                       title: "Ngôn Ngữ",
                     ),
                     buildSettingItem(
                       iconUrl:
-                      "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/CP6HTgEuYE/rv69c1ho_expires_30_days.png",
+                      "assets/images/icons/anhsang.png",
                       title: "Giao Diện",
                     ),
                     buildSectionTitle("Hỗ Trợ"),
                     buildSettingItem(
                       iconUrl:
-                      "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/CP6HTgEuYE/yfbdhj23_expires_30_days.png",
+                      "assets/images/icons/hotro.png",
                       title: "Trợ Giúp",
                     ),
                     buildSettingItem(
                       iconUrl:
-                      "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/CP6HTgEuYE/t3nhff2a_expires_30_days.png",
+                      "assets/images/icons/dexuat.png",
                       title: "Đề Xuất",
                     ),
                     buildSectionTitle("Pháp Lý"),
                     buildSettingItem(
                       iconUrl:
-                      "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/CP6HTgEuYE/pxld7zat_expires_30_days.png",
+                      "assets/images/icons/chinhsach.png",
                       title: "Chính Sách Bảo Mật",
                     ),
                     buildSettingItem(
                       iconUrl:
-                      "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/CP6HTgEuYE/fcw4i9nl_expires_30_days.png",
+                      "assets/images/icons/dieukhoan.png",
                       title: "Điều Khoản & Điều Kiện",
                     ),
                     const SizedBox(height: 50),

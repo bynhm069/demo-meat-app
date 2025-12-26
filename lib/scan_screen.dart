@@ -171,8 +171,8 @@ class ScanScreenState extends State<ScanScreen> {
                                 onTap: () => Navigator.pop(context),
                                 child: Container(
                                     width: 43, height: 43,
-                                    child: Image.network(
-                                      "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/CP6HTgEuYE/w4xgxu69_expires_30_days.png",
+                                    child: Image.asset(
+                                      "assets/images/icons/arrow_back.png",
                                       fit: BoxFit.fill,
                                     )
                                 ),
@@ -187,11 +187,11 @@ class ScanScreenState extends State<ScanScreen> {
                                 onTap: _toggleTorch, // GỌI HÀM BẬT/TẮT ĐÈN FLASH
                                 child: Container(
                                     width: 43, height: 43,
-                                    child: Image.network(
+                                    child: Image.asset(
                                       // Có thể thay đổi icon khi bật/tắt
                                       _isTorchOn
-                                          ? "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/CP6HTgEuYE/jdqinu3o_expires_30_days.png" // Icon Torch On (giả định)
-                                          : "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/CP6HTgEuYE/jdqinu3o_expires_30_days.png", // Icon Torch Off (giả định)
+                                          ? "assets/images/icons/flash_on.png" // Icon Torch On (giả định)
+                                          : "assets/images/icons/flash_off.png", // Icon Torch Off (giả định)
                                       fit: BoxFit.fill,
                                     )
                                 ),
@@ -247,8 +247,8 @@ class ScanScreenState extends State<ScanScreen> {
                               // Icon Gallery
                               Container(
                                   width: 43, height: 43,
-                                  child: Image.network(
-                                    "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/CP6HTgEuYE/8mz0fe87_expires_30_days.png",
+                                  child: Image.asset(
+                                    "assets/images/icons/add_photo_alternate.png",
                                     fit: BoxFit.fill,
                                   )
                               ),
@@ -257,8 +257,8 @@ class ScanScreenState extends State<ScanScreen> {
                                 onTap: _onTakePictureButtonPressed, // GỌI HÀM CHỤP ẢNH & CHUYỂN MÀN HÌNH
                                 child: Container(
                                     width: 76, height: 76,
-                                    child: Image.network(
-                                      "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/CP6HTgEuYE/85pu24xl_expires_30_days.png",
+                                    child: Image.asset(
+                                      "assets/images/icons/photo_camera.png",
                                       fit: BoxFit.fill,
                                     )
                                 ),
@@ -268,8 +268,8 @@ class ScanScreenState extends State<ScanScreen> {
                                 onTap: _switchCamera, // GỌI HÀM CHUYỂN CAMERA
                                 child: Container(
                                     width: 43, height: 43,
-                                    child: Image.network(
-                                      "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/CP6HTgEuYE/vxhp1ypy_expires_30_days.png",
+                                    child: Image.asset(
+                                      "assets/images/icons/flip_camera_android.png",
                                       fit: BoxFit.fill,
                                     )
                                 ),

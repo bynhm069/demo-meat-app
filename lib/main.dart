@@ -3,6 +3,10 @@ import 'package:camera/camera.dart'; // Import thư viện camera
 import 'splash_screen.dart';
 import 'home_screen.dart';
 
+//import 'package:firebase_core/firebase_core.dart';
+//import 'package:flutter/material.dart';
+
+// Khởi tạo Firebase'
 // Biến toàn cục để lưu trữ danh sách các camera có sẵn
 List<CameraDescription> cameras = [];
 

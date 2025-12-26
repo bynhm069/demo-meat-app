@@ -10,9 +10,8 @@ class SplashScreen extends StatefulWidget {
 }
 
 class SplashScreenState extends State<SplashScreen> {
-  // Logo mũi heo
-  final String imageUrl =
-      "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/CP6HTgEuYE/5s36kipj_expires_30_days.png";
+  // Logo mũi heo (asset local)
+  final String imagePath = "assets/images/icons/pig_splash.png";
 
   @override
   void initState() {
@@ -30,7 +29,7 @@ class SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     const Color backgroundColor = Color(0xFFF8BBD0); // hồng splash
-    const Color textColor = Color(0xFF8B4F50);       // màu chữ logo
+    const Color textColor = Color(0xFF8B4F50); // màu chữ logo
 
     return Scaffold(
       backgroundColor: backgroundColor,
@@ -38,19 +37,19 @@ class SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // LOGO HEO – phóng lớn chuẩn splash
+            // LOGO HEO
             SizedBox(
               width: 260,
               height: 260,
-              child: Image.network(
-                imageUrl,
+              child: Image.asset(
+                imagePath,
                 fit: BoxFit.contain,
               ),
             ),
 
             const SizedBox(height: 10),
 
-            // CHỮ HEOSCAN (giống phong cách cong nhẹ trong ảnh)
+            // CHỮ HEOSCAN
             Text(
               "HEOSCAN",
               style: TextStyle(
